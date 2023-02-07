@@ -5,7 +5,7 @@ pipeline {
       steps {
         script {
           ansiblePlaybook(
-            playbook: 'project.yaml',
+            playbook: 'project.yml',
             inventory: 'hostfile.ini'
           )
         }
