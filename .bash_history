@@ -534,3 +534,14 @@ vi project.yml
 ansible-playbook project.yml -i hostfile.ini
 vi project.yml
 ansible-playbook project.yml -i hostfile.ini
+vi new.yml
+vi project.yml
+ansible-playbook project.yml -i hostfile.ini
+vi project.yml
+ansible-playbook project.yml -i hostfile.ini
+vi project.yml
+ansible-playbook project.yml -i hostfile.ini
+vi project.yml
+ansible-playbook project.yml -i hostfile.ini
+vi project.yml
+ansible-playbook project.yml -i hostfile.ini

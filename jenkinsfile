@@ -1,0 +1,15 @@
+pipeline {
+  agent any
+  stages {
+    stage('Ansible Deployment') {
+      steps {
+        script {
+          ansiblePlaybook(
+            playbook: 'project.yaml',
+            inventory: 'hostfile.ini'
+          )
+        }
+      }
+    }
+  }
+}
