@@ -1,0 +1,55 @@
+---
+- name: Provision and configure Flask web app
+  hosts: all
+  become: yes
+
+  tasks: 
+    - name: install required packages
+      package:
+        name: [python3, python3-pip, git,]
+        state: present
+
+    - name: create the destination folder
+      file: 
+        path:  /home/centos//project
+        state: directory
+
+    - name: clone the repo
+      git:
+        repo: https://github.com/kemiye01/mid-class.git
+        dest: /home/centos/project
+
+    - name: Copy Flask application code
+      copy: 
+        src: proj.py 
+        dest: /home/centos/project
+
+    - name: Create Flask virtual environment
+      shell: |
+        python3 -m venv /home/centos//project/flask_env
+        source /home/centos//project/flask_env/bin/activate
+
+    - name: Install Flask library
+      pip:
+        name: Flask
+        executable: /home/centos//project/flask_env/bin/pip3
+        chdir: python3 proj.py
+        state: present
+
+    - name: Install firewall package
+      package:
+        name: firewalld
+        state: latest
+
+    - name: Start firewall service
+      service:
+        name: firewalld
+        state: started
+
+    - name: Add firewall rule for Flask application
+      shell: firewall-cmd --zone=public --add-port=5000/tcp --permanent
+
+    - name: Reload firewall configuration
+      shell: firewall-cmd --reload
+
+...

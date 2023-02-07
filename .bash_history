@@ -192,3 +192,345 @@ ls -l
 . env_flask/bin/activate
 python3 proj.py
 exit
+git push
+git add .
+git commit
+git commit -m new file
+git commit -m new
+git push
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi hostfile.ini
+ansible-playbook projectplay.yml -i hostfile.ini
+ansible all -m ping -i hostfile.ini
+vi projectplay.yml
+vi hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml---
+- name: good stuff
+...
+:wq!
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+sudo hostname mid-class-project
+exit
+ansible-playbook projectplay.yml -i hostfile.ini
+LS -L
+ls -l
+rm projectplay.yml---
+ls -l
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi new
+
+ansible-playbook new.yml -i hostfile.ini
+vi hostfile.ini
+ansible all -m ping -i hostfile.ini 
+
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+ansible-playbook new.yml -i hostfile.ini0
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+vi hostfile.ini 
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi new.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi new.yml
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi projectplay.yml
+ansible-playbook projectplay.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+ansible-playbook --version
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi projectplay.yml
+vi hostfile.ini
+ansble test -m ping hostfile.ini 
+ansble test -m ping -i hostfile.ini 
+ansible test -m ping -i hostfile.ini 
+vi hostfile.ini
+ansible test -m ping -i hostfile.ini 
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+. flask_env/bin/activate
+ls -l
+. env_flask/bin/activate
+
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+vi new.yml
+vi now.yml
+ansible-playbook now.yml -i hostfile.ini
+vi now.yml
+ansible-playbook now.yml -i hostfile.ini
+vi now.yml
+ansible-playbook now.yml -i hostfile.ini
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+history
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+vi new.yml
+ansible-playbook new.yml -i hostfile.ini
+ls -l
+rm new
+ls -l
+rm now
+rm now.yml
+ls -l
+rm projectplay.yml
+ls -l
+mv new.yml project.yml
+ls -l
+ansible-playbook project.yml -i hostfile.ini
+vi project.yml
+ansible-playbook project.yml -i hostfile.ini
+vi project.yml
+ansible-playbook project.yml -i hostfile.ini
+vi hostfile.ini
+ansible-playbook project.yml -i hostfile.ini
+vi project.yml
+ansible-playbook project.yml -i hostfile.ini
+vi project.yml
+ansible-playbook project.yml -i hostfile.ini
+vi project.yml
+ansible-playbook project.yml -i hostfile.ini
+vi project.yml
+ansible-playbook project.yml -i hostfile.ini
+vi project.yml
+ansible-playbook project.yml -i hostfile.ini
+vi project.yml
+ansible-playbook project.yml -i hostfile.ini
+vi project.yml
+ansible-playbook project.yml -i hostfile.ini
+touch flask_app.service.j2
+rm flask_app.service.j2 
+vi proj.service.py
+vi project.yml
+ansible-playbook project.yml -i hostfile.ini
+vi project.yml
+ansible-playbook project.yml -i hostfile.ini
+vi project.yml
+ansible-playbook project.yml -i hostfile.ini

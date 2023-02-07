@@ -1,0 +1,43 @@
+---
+- name: Provision and configure EC2 instance for Flask web app
+  hosts: localhost
+  tasks:
+     - name: Install required packages
+       Become: yes
+       apt:
+         name:
+          - python3
+          - python3-pip
+          - nginx
+         state: present
+
+      - name: Copy Flask application code to the instance
+        copy:
+          src: proj.py
+          dest: /home/centos/~
+          owner: root
+          group: root
+
+    - name: Install Flask and dependencies
+      Become: yes
+      pip:
+        name:
+          - Flask
+        state: present
+
+    - name: Configure Nginx
+      Become: yes
+      template:
+        src: templates/nginx.conf.j2
+        dest: /etc/nginx/sites-available/proj.py
+      notify:
+        - restart nginx
+
+    - name: Enable Nginx site
+      Become: yes
+      file:
+        src: /etc/nginx/sites-available/proj.pyp
+        dest: /etc/nginx/sites-enabled/proj.py
+        state: link
+        force: yes
+...

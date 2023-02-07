@@ -1,0 +1,81 @@
+
+# Ansible playbook for deploying a Flask app
+---
+# Install system apt packages
+- hosts: Sn3
+  become: yes
+  become_method: sudo
+  tasks:
+  - name: update cache
+    yum: name=python-software-properties state=present update_cache=yes cache_valid_time=43200
+  - name: disable lighttpd
+    systemd: name=lighttpd state=stopped enabled=no  # To avoid conflicts with nginx
+  - name: install packages
+    yum: name={{item}} state=installed
+    with_items:
+      - tree         # Optional
+      - python-pip   # Optional
+      - python-dev   # Optional
+      - python3-pip
+      - python3-dev
+      - nginx
+
+# Install the app, note: don't do these tasks with become sudo
+- hosts: Sn3
+  tasks:
+  - name: clone repo
+    git:
+      repo: 'https://github.com/{{kemiye01}}/{{mid-class}}.git'
+      dest: /home/{{ centos }}/{{ mid-class }}
+      update: yes  # Does a git pull if the repo already exists
+  - name: install modules in a virtualenv
+    pip:
+      requirements: /home/{{ centos }}/{{ mid-class }}/requirements.txt
+      virtualenv: /home/{{ centos }}/{{ mid-class }}/env
+      virtualenv_python: python3.5
+
+# Configure app systemd service and nginx
+- hosts: Sn3
+  become: yes
+  become_method: sudo
+  tasks:
+  - name: template systemd service config
+    copy:
+      src: .service
+      dest: /etc/systemd/system/{{ mid-class }}.service
+  - name: start systemd app service
+    systemd: name={{ mid-class }}.service state=restarted enabled=yes
+  - name: template nginx site config
+    template:
+      src: .nginx
+      dest: /etc/nginx/sites-available/{{ mid-class }}
+  - name: remove default nginx site config
+    file: path=/etc/nginx/sites-enabled/default state=absent
+  # - command: mv /etc/nginx/sites-enabled/default /tmp/nginx.sites-enabled.default
+  - name: enable nginx site
+    file:
+      src: /etc/nginx/sites-available/{{ mid-class }}
+      dest: /etc/nginx/sites-enabled/default
+      state: link
+      force: yes
+  - name: restart nginx
+    systemd: name=nginx state=restarted enabled=yes
+  - name: open firewall for nginx
+    ufw:
+      rule: allow
+      name: Nginx Full
+
+# Run a quick test to verify the site is working
+- hosts: Sn3
+  tasks:
+  - name: get url
+    get_url:
+      url: http://{{34.238.50.29}}
+      dest: /tmp/index.html
+  - name: read html
+    shell: cat /tmp/index.html
+    register: html_contents
+  - name: check for string in html
+    when: html_contents.stdout.find('hello') != -1
+    debug: msg="success!"
+...
