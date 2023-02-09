@@ -1,9 +1,14 @@
 ---
 - name: Deploy Flask App
-  hosts: Sn3
+  hosts: g1
   become: yes
 
   tasks:
+    - name: Add the default Ubuntu repository
+      apt_repository:
+        repo: 'deb http://archive.ubuntu.com/ubuntu focal main'
+        state: present
+
     - name: Install required packages
       package:
         name:
@@ -18,14 +23,8 @@
 
     - name: Clone the repository
       git:
-        repo: https://github.com/kemiye01/mid-class.git
+        repo: <your repo>
         dest: /opt/flask-app
-
-    - name: Install Flask library
-      pip:
-         name: Flask
-         executable: /usr/bin/pip3
-         state: present
 
     - name: Install Flask and its dependencies
       pip:
@@ -36,3 +35,8 @@
       command: python3 /opt/flask-app/app.py
       async: 1
       poll: 0
+      register: flask_app_start_result
+
+    - name: Debug the output
+      debug:
+        var: flask_app_start_result
